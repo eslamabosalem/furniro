@@ -1,0 +1,20 @@
+.hero-section {
+  height: calc(100vh - 80px);
+  position: relative;
+}
+.hero-section .new-arrival-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  @apply bg-pink py-12 px-10 rounded-xl 2xl:w-[600px] max-md:w-[90%] max-md:px-6 max-md:py-8 max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:-translate-y-1/2;
+}
+.hero-section .new-arrival-card > span {
+  @apply tracking-wider font-medium;
+}
+.hero-section .new-arrival-card > h2 {
+  @apply font-bold text-5xl text-goldPrimary leading-tight mb-4 mt-2 max-md:text-4xl;
+}
+.hero-section .new-arrival-card > p {
+  @apply mb-10;
+}

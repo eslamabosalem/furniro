@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Import Styles */
+@import url("./../styles/header.css");
+@import url("./../styles/Home/Hero.css");
+@import url("./../styles/Products/ProductCard.css");
+
+/* Manage Tailwind Container */
+@layer base {
+  .container {
+    @apply mx-auto px-8;
+  }
+}
+
+/*  Scroll Bar */
+body {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #b88f30;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 2px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

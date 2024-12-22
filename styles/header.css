@@ -1,0 +1,36 @@
+header {
+  @apply border-b z-50 bg-white sticky top-0;
+}
+header .container {
+  @apply flex justify-between items-center h-[80px];
+}
+header a img {
+  @apply max-lg:w-[108px] max-lg:h-[58px];
+}
+header ul.links {
+  @apply flex items-center gap-8;
+}
+header ul.links li a {
+  @apply px-4 py-3 text-lg font-medium;
+}
+@media (max-width: 1023px) {
+  header ul.links {
+    @apply absolute flex-col items-center right-0 top-[80px] bg-white border border-solid border-[#eee] p-5 w-[300px]  gap-4 shadow-lg z-50;
+    transition: 0.05s;
+  }
+  header ul.links li {
+    @apply w-full text-center;
+  }
+  header ul.links li a {
+    @apply block hover:border-none;
+  }
+}
+header ul.nav-icons {
+  @apply flex items-center gap-8 max-sm:gap-2;
+}
+header ul.nav-icons li svg {
+  @apply cursor-pointer w-9 h-9 p-2;
+}
+header ul.nav-icons .nav-menu {
+  @apply lg:hidden;
+}

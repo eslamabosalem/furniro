@@ -1,0 +1,12 @@
+.product-card {
+  position: relative;
+  &:hover .hover-layout {
+    opacity: 1;
+  }
+  .hover-layout {
+    opacity: 0;
+    transition: 0.15s;
+    position: absolute;
+    @apply absolute inset-0 bg-black/60 flex items-center justify-center flex-col gap-8 text-white;
+  }
+}

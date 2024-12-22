@@ -1,0 +1,37 @@
+header {
+  @apply border-b z-50 bg-white sticky top-0;
+  .container {
+    @apply flex justify-between items-center h-[80px];
+  }
+  a img {
+    @apply max-lg:w-[108px] max-lg:h-[58px];
+  }
+
+  ul.links {
+    @apply flex items-center gap-8;
+    li a {
+      @apply px-4 py-3 text-lg font-medium;
+    }
+    // Transform the navbar to navbar-menu
+    @media (max-width: 1023px) {
+      @apply absolute flex-col items-center right-0 top-[80px] bg-white border border-solid border-[#eee] p-5 w-[300px]  gap-4 shadow-lg z-50;
+      transition: 0.05s;
+      li {
+        @apply w-full text-center;
+        a {
+          @apply block hover:border-none;
+        }
+      }
+    }
+  }
+
+  ul.nav-icons {
+    @apply flex items-center gap-8 max-sm:gap-2;
+    li svg {
+      @apply cursor-pointer w-9 h-9 p-2;
+    }
+    .nav-menu {
+      @apply lg:hidden;
+    }
+  }
+}
