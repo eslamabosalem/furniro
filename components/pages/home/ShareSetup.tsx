@@ -6,7 +6,7 @@ function ShareSetup() {
       {/* Section Header */}
       <div className="header text-center">
         <p className="text-gray-900">Share your setup with</p>
-        <h3 className="font-bold text-3xl text-black/90">#FuniroFurniture</h3>
+        <h3 className="font-bold text-3xl text-black/90">FuniroFurniture</h3>
       </div>
 
       {/* Gallery */}
