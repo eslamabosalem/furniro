@@ -5,12 +5,12 @@ function ShareSetup() {
     <section className="share-setup py-20">
       {/* Section Header */}
       <div className="header text-center">
-        <p className="text-gray-900">Share your setup with </p>
+        <p className="text-gray-900">Share your setup with</p>
         <h3 className="font-bold text-3xl text-black/90">FuniroFurniture</h3>
       </div>
 
       {/* Gallery */}
-      <div className="gallery-wrapper flex gap-4 items-center overflow-hidden max-xl:flex-col max-xl:mt-10">
+      <div className="gallery-wrapper flex gap-4 items-center overflow-hidden  max-xl:flex-col max-xl:mt-10">
         {/* Left Side */}
         <div className="left flex-[3] flex flex-col gap-4 relative right-[40px]">
           <div className="top flex gap-4 items-end">
